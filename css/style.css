@@ -65,28 +65,31 @@
 }
 
 header {
-  height: 20vh;
+  height: 10vh;
   background-color: #272727;
 }
 
-.navbar {
-  box-sizing: border-box;
-  height: 15vh;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background: #272727;
+.container {
+  padding: 40px 0;
 }
 
-.navbar-logo {
+#logo {
   font-family: "Inter", sans-serif;
   color: rgb(3, 152, 158);
   font-size: 2rem;
   font-weight: 800;
+}
+
+.nav-item a {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: white;
   text-decoration: none;
-  display: flex;
-  justify-content: center;
+  transition: 0.7s;
+}
+
+#nav-a:hover {
+  color: rgb(3, 152, 158);
 }
 
 .navbar-ul {
@@ -98,17 +101,8 @@ header {
   color: white;
 }
 
-.nav-a {
-  display: flex;
-  align-items: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 22px;
-  color: white;
-  text-decoration: none;
-  transition: 0.7s;
-}
-.nav-a:hover {
-  color: rgb(3, 152, 158);
+.navbar-expand-lg .navbar-nav .nav-item .nav-link {
+  padding: 0 1rem;
 }
 
 .home {
@@ -144,8 +138,6 @@ header {
 
 .btn-github {
   display: flex;
-  align-items: center;
-  gap: 10px;
   height: 70px;
   width: 160px;
   border: 3px solid rgb(3, 152, 158);
@@ -157,13 +149,16 @@ header {
   background-color: #272727;
 }
 
-.btn-github a {
+.btn-github a, p {
   text-decoration: none;
   color: #fff;
   font-family: roboto;
   font-size: 1.5rem;
-  padding: 22px;
-  margin: 0 auto;
+  padding: 12px;
+}
+
+.btn-github p {
+  margin-top: 0.5rem;
 }
 
 .btn-github img {
@@ -174,6 +169,7 @@ header {
   background-color: #272727;
   height: 80vh;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 10rem;
@@ -182,7 +178,7 @@ header {
 .btn-curriculo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
   height: 70px;
   width: 160px;
   border: 3px solid rgb(3, 152, 158);
@@ -194,15 +190,22 @@ header {
   background-color: #121212;
 }
 
-.btn-curriculo a {
+.btn-curriculo img {
+  width: 2rem;
+}
+
+.btn-curriculo a, p {
   display: flex;
   gap: 10px;
   text-decoration: none;
   color: #fff;
   font-family: roboto;
   font-size: 1.5rem;
-  padding: 10px;
-  margin: 0 auto;
+  padding: 6px;
+}
+
+.btn-curriculo p {
+  margin-top: 1.5rem;
 }
 
 .text-about {
@@ -230,6 +233,30 @@ header {
 
 .image-about {
   margin-bottom: 1rem;
+}
+
+@media (max-width: 1150px) {
+  #home {
+    height: 100vh;
+    text-align: center;
+    margin-top: 4rem;
+  }
+  .btn-github {
+    margin: 0 auto;
+  }
+  .home-image {
+    display: none;
+  }
+  .about {
+    height: 120vh;
+    gap: 0rem;
+  }
+  .text-about {
+    text-align: center;
+  }
+  .btn-curriculo {
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
