@@ -96,7 +96,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
   list-style: none;
   color: white;
 }
@@ -149,16 +148,15 @@ header {
   background-color: #272727;
 }
 
-.btn-github a, p {
+.btn-github a {
   text-decoration: none;
   color: #fff;
   font-family: roboto;
   font-size: 1.5rem;
-  padding: 12px;
+  padding: 15px 22px;
 }
-
-.btn-github p {
-  margin-top: 0.5rem;
+.btn-github a:hover {
+  color: #fff;
 }
 
 .btn-github img {
@@ -194,14 +192,17 @@ header {
   width: 2rem;
 }
 
-.btn-curriculo a, p {
+.btn-curriculo a {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   text-decoration: none;
   color: #fff;
   font-family: roboto;
   font-size: 1.5rem;
-  padding: 6px;
+  padding: 4px;
+}
+.btn-curriculo a:hover {
+  color: #fff;
 }
 
 .btn-curriculo p {
@@ -235,6 +236,36 @@ header {
   margin-bottom: 1rem;
 }
 
+.technology {
+  height: 50vh;
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.technology h1 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  padding-top: 3rem;
+}
+
+.tech-images {
+  display: flex;
+  gap: 4rem;
+}
+
+.html-text:hover {
+  background-color: white;
+  transform: scale(1.05);
+}
+
 @media (max-width: 1150px) {
   #home {
     height: 100vh;
@@ -256,6 +287,38 @@ header {
   }
   .btn-curriculo {
     margin: 0 auto;
+  }
+}
+@media (max-width: 994px) {
+  .navbar-expand-lg .navbar-nav .nav-item .nav-link {
+    padding: 1rem 0rem;
+  }
+}
+@media (max-width: 750px) {
+  .home-text h1 {
+    font-size: 2.5rem;
+  }
+  .home-text h2 {
+    font-size: 1.5rem;
+  }
+  .text-about p {
+    max-width: 500px;
+  }
+}
+@media (max-width: 530px) {
+  .text-about p {
+    max-width: 420px;
+  }
+}
+@media (max-width: 440px) {
+  .text-about p {
+    max-width: 350px;
+  }
+  .image-about img {
+    height: 300px;
+  }
+  .about {
+    height: 120vh;
   }
 }
 
