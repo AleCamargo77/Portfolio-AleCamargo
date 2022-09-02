@@ -236,34 +236,56 @@ header {
   margin-bottom: 1rem;
 }
 
-.technology {
-  height: 50vh;
+#skills {
   background-color: #121212;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 2.5rem;
+  height: 70vh;
 }
 
-.technology h1 {
+.skills-pd h2 {
   text-align: center;
   font-family: "Roboto", sans-serif;
   color: #fff;
   font-size: 2.5rem;
   text-transform: uppercase;
-  padding-top: 3rem;
+  padding-top: 5rem;
 }
 
-.tech-images {
+.skills-description {
   display: flex;
-  gap: 4rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 80px;
+  padding-bottom: 70px;
+  padding-top: 5rem;
 }
 
-.html-text:hover {
-  background-color: white;
-  transform: scale(1.05);
+.container-skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.skill-box {
+  height: 106px;
+  width: 106px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: ease 0.3s;
+}
+.skill-box:hover {
+  transform: scale(1.1);
+}
+
+.container-description {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 2rem;
 }
 
 @media (max-width: 1150px) {
@@ -287,6 +309,10 @@ header {
   }
   .btn-curriculo {
     margin: 0 auto;
+  }
+  #skills {
+    background-color: #121212;
+    height: 90vh;
   }
 }
 @media (max-width: 994px) {
@@ -319,6 +345,11 @@ header {
   }
   .about {
     height: 120vh;
+  }
+}
+@media (max-width: 484px) {
+  #skills {
+    height: auto;
   }
 }
 
