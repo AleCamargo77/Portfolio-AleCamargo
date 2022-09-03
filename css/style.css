@@ -64,8 +64,8 @@
   box-sizing: border-box;
 }
 
-header {
-  height: 10vh;
+.navbar {
+  height: 10vh !important;
   background-color: #272727;
 }
 
@@ -102,6 +102,10 @@ header {
 
 .navbar-expand-lg .navbar-nav .nav-item .nav-link {
   padding: 0 1rem;
+}
+
+.navbar-toggler {
+  background-color: rgb(3, 152, 158) !important;
 }
 
 .home {
@@ -215,10 +219,11 @@ header {
   gap: 1rem;
 }
 
-.text-about h2 {
+.text-about h1 {
   font-family: "Roboto", sans-serif;
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: bold;
   text-transform: uppercase;
   margin-top: 3rem;
 }
@@ -236,16 +241,17 @@ header {
   margin-bottom: 1rem;
 }
 
-#skills {
+.skills-container {
   background-color: #121212;
   height: 70vh;
 }
 
-.skills-pd h2 {
+.skills-pd h1 {
   text-align: center;
   font-family: "Roboto", sans-serif;
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: bold;
   text-transform: uppercase;
   padding-top: 5rem;
 }
@@ -286,6 +292,55 @@ header {
   font-size: 20px;
   text-align: center;
   padding-top: 2rem;
+}
+
+.experience {
+  background-color: #272727;
+}
+
+#experience h1 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.experience-img img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+.experience-container-one, .experience-container-two {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5rem;
+  padding-bottom: 5rem;
+}
+
+.experience-content {
+  width: 45%;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.experience-content h3 {
+  font-size: 32px;
+}
+
+.experience-company {
+  color: rgb(3, 152, 158);
+  font-size: 32px;
+  padding: 1rem 0;
+}
+
+.experience-content p {
+  font-size: 22px;
 }
 
 @media (max-width: 1150px) {
@@ -330,6 +385,19 @@ header {
   .text-about p {
     max-width: 500px;
   }
+  .experience-container-one, .experience-container-two {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+  .experience-content {
+    width: 80%;
+  }
+  .experience-content p {
+    font-size: 16px;
+  }
 }
 @media (max-width: 530px) {
   .text-about p {
@@ -345,6 +413,9 @@ header {
   }
   .about {
     height: 120vh;
+  }
+  #experience h1, .skills-pd h1, .text-about h1 {
+    font-size: 2rem;
   }
 }
 @media (max-width: 484px) {
