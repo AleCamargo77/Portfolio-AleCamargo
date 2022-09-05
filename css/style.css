@@ -64,11 +64,6 @@
   box-sizing: border-box;
 }
 
-.navbar {
-  height: 10vh !important;
-  background-color: #272727;
-}
-
 .container {
   padding: 40px 0;
 }
@@ -169,7 +164,7 @@
 
 .about {
   background-color: #272727;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -243,7 +238,8 @@
 
 .skills-container {
   background-color: #121212;
-  height: 70vh;
+  height: 80vh;
+  scroll-margin-top: 8em;
 }
 
 .skills-pd h1 {
@@ -296,6 +292,8 @@
 
 .experience {
   background-color: #272727;
+  height: 140vh;
+  scroll-margin-top: 7em;
 }
 
 #experience h1 {
@@ -315,7 +313,8 @@
   border-radius: 100%;
 }
 
-.experience-container-one, .experience-container-two {
+.experience-container-one,
+.experience-container-two {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -341,6 +340,61 @@
 
 .experience-content p {
   font-size: 22px;
+}
+
+#projects {
+  background-color: #121212;
+  height: 90vh;
+}
+
+.projects-container h1 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+}
+
+.cards-projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.footer-content img {
+  width: 80px;
+}
+
+.footer-content p {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+
+.footer-contacts {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-icon:hover {
+  transform: rotate(-360deg);
+}
+
+.footer-icon {
+  border-radius: 100%;
+  transition: ease-in-out 0.3s;
+}
+
+.footer-content {
+  height: 15vh;
+  background-color: #272727;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 @media (max-width: 1150px) {
@@ -385,7 +439,8 @@
   .text-about p {
     max-width: 500px;
   }
-  .experience-container-one, .experience-container-two {
+  .experience-container-one,
+.experience-container-two {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -414,7 +469,9 @@
   .about {
     height: 120vh;
   }
-  #experience h1, .skills-pd h1, .text-about h1 {
+  #experience h1,
+.skills-pd h1,
+.text-about h1 {
     font-size: 2rem;
   }
 }
