@@ -84,11 +84,11 @@
                 >Projetos</a
               >
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link active" id="nav-a" aria-current="page" href="#"
                 >Contato</a
               >
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -251,18 +251,30 @@
     </section>
 
     <section class="projects-container" id="projects">
-      <div data-aos="zoom-in-up" data-aos-duration="1500">
+      <div
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="1500"
+      >
         <h1>Projetos</h1>
         <div class="cards-projects">
-          <div class="card" style="width: 18rem">
-            <img src="./images/Logo Gomes.jpg" class="card-img-top" alt="..." />
+          <div class="card" style="width: 18rem; background-color: #000">
+            <img
+              src="./images/Logo Gomes preto.jpg"
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn btn-primary" id="card-btn"
+                ><img src="./images/visualizador-icon.png" alt="Curriculo" />
+                Visualizar</a
+              >
             </div>
           </div>
           <div class="card" style="width: 18rem">
@@ -273,7 +285,10 @@
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn btn-primary" id="card-btn"
+                ><img src="./images/visualizador-icon.png" alt="Curriculo" />
+                Visualizar</a
+              >
             </div>
           </div>
           <div class="card" style="width: 18rem">
@@ -284,18 +299,29 @@
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <!-- <a
+                href="#"
+                class="btn btn-primary"
+                id="card-btn"
+                >Visualizar</a
+              > -->
+              <a href="#" class="btn btn-primary" id="card-btn"
+                ><img src="./images/visualizador-icon.png" alt="Curriculo" />
+                Visualizar</a
+              >
             </div>
           </div>
         </div>
       </div>
     </section>
-
+    <div onclick="upButton()" class="upbutton">
+      <img src="./images/arrowUp.svg" alt="seta" />
+    </div>
     <footer id="footer">
       <div class="footer-content">
         <p>
-          © Copyright <spam id="year"></spam> | Desenvolvido por Alessandro
-          Camargo
+          © Copyright <spam id="year"></spam> | Desenvolvido por
+          <bold>Alessandro Camargo</bold>
         </p>
         <div class="footer-contacts">
           <a href="#"
@@ -304,7 +330,7 @@
               src="./images/linkedin.png"
               alt="Linkedin"
           /></a>
-          <a href="#"
+          <a href="mailto:alecamargo.dev@gmail.com" target="_blank"
             ><img class="footer-icon" src="./images/gmail.png" alt="Gmail"
           /></a>
         </div>

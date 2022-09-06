@@ -8,11 +8,6 @@
   box-sizing: border-box;
 }
 
-.navbar {
-  // height: 15vh !important;
-  // background-color: $bgd-color-primary;
-}
-
 .container {
   padding: 40px 0;
 }
@@ -26,7 +21,7 @@
 
 .nav-item a {
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 24px;
   color: white;
   text-decoration: none;
   transition: 0.7s;
@@ -187,7 +182,7 @@
 
 .skills-container {
   background-color: $bgd-color-secondary;
-  height: 80vh;
+  height: 70vh;
   scroll-margin-top: 8em;
 }
 
@@ -294,6 +289,7 @@
 #projects {
   background-color: $bgd-color-secondary;
   height: 90vh;
+  scroll-margin-top: 7em;
 }
 
 .projects-container h1 {
@@ -311,7 +307,62 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 5rem;
+}
+
+.card {
+  transition: ease 0.3s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.card-body {
+  background-color: $bgd-color-primary;
+  color: $color-white;
+  height: 18rem;
+}
+
+.card img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#card-btn {
+  background-color: transparent;
+  border: 3px solid $color-green;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.7s;
+  color: $color-white;
+  font-size: 20px;
+  margin-top: 5rem;
+  &:hover {
+    background-color: $bgd-color-secondary;
+  }
+}
+
+#card-btn img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.upbutton {
+  display: none;
+}
+
+.upbutton img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 60px;
+  left: 95%;
+  cursor: pointer;
 }
 
 .footer-content img {
@@ -344,6 +395,11 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.footer-content bold {
+  color: $color-green;
+  font-weight: 900;
 }
 @media (max-width: 1150px) {
   #home {
