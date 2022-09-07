@@ -503,6 +503,9 @@
   .footer-content {
     flex-direction: column;
   }
+  #experience {
+    height: 200vh;
+  }
 }
 
 @media (max-width: 440px) {
@@ -520,16 +523,7 @@
   .text-about h1 {
     font-size: 2rem;
   }
-  #experience {
-    height: 200vh;
-  }
 }
-
-// @media (max-width: 520px){
-//   .text-description {
-//     height: 150vh;
-// }
-// }
 
 @media (max-width: 484px) {
   #skills {
