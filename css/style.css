@@ -71,13 +71,13 @@
 #logo {
   font-family: "Inter", sans-serif;
   color: rgb(3, 152, 158);
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 800;
 }
 
 .nav-item a {
   font-family: "Roboto", sans-serif;
-  font-size: 24px;
+  font-size: 1rem;
   color: white;
   text-decoration: none;
   transition: 0.7s;
@@ -110,7 +110,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding-top: 2rem;
+  padding-top: 5rem;
 }
 
 .home-text {
@@ -123,21 +123,21 @@
 .home-text h2 {
   font-family: "Roboto", sans-serif;
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 
 .home-text h1 {
   font-family: "Roboto", sans-serif;
   color: rgb(3, 152, 158);
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
 }
 
 .btn-github {
   display: flex;
-  height: 70px;
-  width: 160px;
+  height: 50px;
+  width: 120px;
   border: 3px solid rgb(3, 152, 158);
   border-radius: 10px;
   cursor: pointer;
@@ -151,8 +151,8 @@
   text-decoration: none;
   color: #fff;
   font-family: roboto;
-  font-size: 1.5rem;
-  padding: 15px 22px;
+  font-size: 1rem;
+  padding: 8px 15px;
 }
 .btn-github a:hover {
   color: #fff;
@@ -162,6 +162,10 @@
   width: 2rem;
 }
 
+.home-image img {
+  height: 400px;
+}
+
 .about {
   background-color: #272727;
   height: 100vh;
@@ -169,15 +173,15 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 10rem;
+  gap: 5rem;
 }
 
 .btn-curriculo {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70px;
-  width: 160px;
+  height: 50px;
+  width: 120px;
   border: 3px solid rgb(3, 152, 158);
   border-radius: 10px;
   cursor: pointer;
@@ -188,7 +192,7 @@
 }
 
 .btn-curriculo img {
-  width: 2rem;
+  width: 1rem;
 }
 
 .btn-curriculo a {
@@ -197,7 +201,7 @@
   text-decoration: none;
   color: #fff;
   font-family: roboto;
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 4px;
 }
 .btn-curriculo a:hover {
@@ -211,22 +215,21 @@
 .text-about {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .text-about h1 {
   font-family: "Roboto", sans-serif;
   color: #fff;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   text-transform: uppercase;
-  margin-top: 3rem;
 }
 
 .text-about p {
   font-family: "Roboto", sans-serif;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1rem;
   max-width: 600px;
   line-height: 1.5;
   padding-bottom: 1rem;
@@ -236,9 +239,19 @@
   margin-bottom: 1rem;
 }
 
+.image-about img {
+  height: 300px;
+  width: 300px;
+}
+
+.icons-skills {
+  width: 100px;
+  height: 100px;
+}
+
 .skills-container {
   background-color: #121212;
-  height: 70vh;
+  height: 100vh;
   scroll-margin-top: 8em;
 }
 
@@ -246,7 +259,7 @@
   text-align: center;
   font-family: "Roboto", sans-serif;
   color: #fff;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   text-transform: uppercase;
   padding-top: 5rem;
@@ -256,7 +269,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 80px;
+  gap: 50px;
   padding-bottom: 70px;
   padding-top: 5rem;
 }
@@ -285,21 +298,21 @@
 .container-description {
   color: #fff;
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 1rem;
   text-align: center;
   padding-top: 2rem;
 }
 
 .experience {
   background-color: #272727;
-  height: 140vh;
+  height: 160vh;
   scroll-margin-top: 7em;
 }
 
 #experience h1 {
   color: #fff;
   font-family: "Roboto", sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
@@ -308,8 +321,8 @@
 }
 
 .experience-img img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 100%;
 }
 
@@ -329,7 +342,7 @@
 }
 
 .experience-content h3 {
-  font-size: 32px;
+  font-size: 1.5rem;
 }
 
 .experience-company {
@@ -339,24 +352,24 @@
 }
 
 .experience-content p {
-  font-size: 22px;
+  font-size: 1rem;
 }
 
 #projects {
   background-color: #121212;
-  height: 90vh;
+  height: 100vh;
   scroll-margin-top: 7em;
 }
 
 .projects-container h1 {
   color: #fff;
   font-family: "Roboto", sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
   padding-top: 5rem;
-  padding-bottom: 8rem;
+  padding-bottom: 3rem;
 }
 
 .cards-projects {
@@ -367,43 +380,39 @@
   gap: 5rem;
 }
 
-.card {
-  transition: ease 0.3s;
-}
-.card:hover {
-  transform: scale(1.1);
-}
-
 .card-body {
   background-color: #272727;
   color: #fff;
-  height: 18rem;
+  height: 15rem;
 }
 
 .card img {
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   margin: 0 auto;
   padding: 10px;
 }
 
 #card-btn {
   background-color: transparent;
+  height: 3rem;
+  width: 8.2rem;
   border: 3px solid rgb(3, 152, 158);
   border-radius: 10px;
   cursor: pointer;
   transition: 0.7s;
   color: #fff;
-  font-size: 20px;
-  margin-top: 5rem;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  padding: 0px 5px;
 }
 #card-btn:hover {
   background-color: #121212;
 }
 
 #card-btn img {
-  height: 2.5rem;
+  height: 3rem;
   width: 2.5rem;
 }
 
@@ -412,23 +421,23 @@
 }
 
 .upbutton img {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   position: fixed;
-  bottom: 60px;
+  bottom: 20px;
   left: 95%;
   cursor: pointer;
 }
 
 .footer-content img {
-  width: 80px;
+  width: 60px;
 }
 
 .footer-content p {
   color: #fff;
   font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .footer-contacts {
@@ -460,7 +469,7 @@
 
 @media (max-width: 1150px) {
   #home {
-    height: 100vh;
+    height: 60vh;
     text-align: center;
     margin-top: 4rem;
   }
@@ -483,6 +492,9 @@
   #skills {
     background-color: #121212;
     height: 90vh;
+  }
+  #projects {
+    height: 120vh;
   }
 }
 @media (max-width: 994px) {
@@ -513,6 +525,11 @@
   }
   .experience-content p {
     font-size: 16px;
+  }
+}
+@media (max-width: 665px) {
+  #projects {
+    height: 180vh;
   }
 }
 @media (max-width: 530px) {
