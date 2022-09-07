@@ -487,9 +487,21 @@
   }
 }
 
-@media (max-width: 530px) {
+@media (max-width: 545px) {
   .text-about p {
     max-width: 420px;
+  }
+  #experience {
+    height: 180vh;
+  }
+  // .footer-content img {
+  //   width: 40px;
+  // }
+  .footer-content p {
+    font-size: 0.8rem;
+  }
+  .footer-content {
+    flex-direction: column;
   }
 }
 
@@ -507,6 +519,9 @@
   .skills-pd h1,
   .text-about h1 {
     font-size: 2rem;
+  }
+  #experience {
+    height: 200vh;
   }
 }
 
