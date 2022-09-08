@@ -445,13 +445,16 @@
     height: 90vh;
   }
   #projects {
-    height: 120vh;
+    height: 140vh;
   }
 }
 
 @media (max-width: 994px) {
   .navbar-expand-lg .navbar-nav .nav-item .nav-link {
     padding: 1rem 0rem;
+  }
+  .upbutton img {
+    display: none;
   }
 }
 
@@ -479,11 +482,17 @@
   .experience-content p {
     font-size: 16px;
   }
+  .experience {
+    height: 200vh;
+  }
 }
 
 @media (max-width: 665px) {
   #projects {
     height: 180vh;
+  }
+  #projects {
+    height: 220vh;
   }
 }
 
@@ -504,7 +513,7 @@
     flex-direction: column;
   }
   #experience {
-    height: 200vh;
+    height: 220vh;
   }
 }
 
@@ -522,6 +531,9 @@
   .skills-pd h1,
   .text-about h1 {
     font-size: 2rem;
+  }
+  #experience {
+    height: auto;
   }
 }
 
