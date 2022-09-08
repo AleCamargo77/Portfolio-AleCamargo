@@ -64,7 +64,7 @@
   box-sizing: border-box;
 }
 
-.container {
+.navbar {
   padding: 40px 0;
 }
 
@@ -75,10 +75,15 @@
   font-weight: 800;
 }
 
+#nav1 {
+  display: flex;
+  justify-content: center;
+}
+
 .nav-item a {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  color: white;
+  color: #fff;
   text-decoration: none;
   transition: 0.7s;
 }
@@ -88,9 +93,6 @@
 }
 
 .navbar-ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   list-style: none;
   color: white;
 }
@@ -471,7 +473,7 @@
   #home {
     height: 60vh;
     text-align: center;
-    margin-top: 4rem;
+    padding-top: 4rem;
   }
   .btn-github {
     margin: 0 auto;
