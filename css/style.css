@@ -106,13 +106,13 @@
 }
 
 .home {
-  height: 100vh;
+  height: auto;
   background-color: #121212;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding-top: 5rem;
+  padding: 5rem 0;
 }
 
 .home-text {
@@ -170,7 +170,8 @@
 
 .about {
   background-color: #272727;
-  height: 100vh;
+  height: auto;
+  padding: 5rem 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -253,7 +254,8 @@
 
 .skills-container {
   background-color: #121212;
-  height: 100vh;
+  height: auto;
+  padding: 5rem 0;
   scroll-margin-top: 8em;
 }
 
@@ -307,7 +309,7 @@
 
 .experience {
   background-color: #272727;
-  height: 160vh;
+  height: auto;
   scroll-margin-top: 7em;
 }
 
@@ -359,7 +361,8 @@
 
 #projects {
   background-color: #121212;
-  height: 100vh;
+  height: auto;
+  padding: 5rem 0;
   scroll-margin-top: 7em;
 }
 
@@ -457,7 +460,8 @@
 }
 
 .footer-content {
-  height: 15vh;
+  height: auto;
+  padding: 1rem 0;
   background-color: #272727;
   display: flex;
   align-items: center;
@@ -482,8 +486,9 @@
     display: none;
   }
   .about {
-    height: 120vh;
-    gap: 0rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    height: auto;
   }
   .text-about {
     text-align: center;
@@ -493,10 +498,12 @@
   }
   #skills {
     background-color: #121212;
-    height: 90vh;
+    height: auto;
   }
   #projects {
-    height: 140vh;
+    height: auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }
 @media (max-width: 994px) {
@@ -531,24 +538,10 @@
   .experience-content p {
     font-size: 16px;
   }
-  .experience {
-    height: 200vh;
-  }
-}
-@media (max-width: 665px) {
-  #projects {
-    height: 180vh;
-  }
-  #projects {
-    height: 220vh;
-  }
 }
 @media (max-width: 545px) {
   .text-about p {
     max-width: 420px;
-  }
-  #experience {
-    height: 180vh;
   }
   .footer-content p {
     font-size: 0.8rem;
@@ -556,32 +549,23 @@
   .footer-content {
     flex-direction: column;
   }
-  #experience {
-    height: 220vh;
+  .experience-content p {
+    font-size: 0.8rem;
   }
 }
 @media (max-width: 440px) {
   .text-about p {
     max-width: 350px;
   }
-  .image-about img {
-    height: 300px;
-  }
-  .about {
-    height: 120vh;
-  }
   #experience h1,
 .skills-pd h1,
 .text-about h1 {
     font-size: 2rem;
   }
-  #experience {
-    height: auto;
-  }
 }
-@media (max-width: 484px) {
-  #skills {
-    height: auto;
+@media (max-width: 340px) {
+  .footer-content p {
+    font-size: 0.6rem;
   }
 }
 
