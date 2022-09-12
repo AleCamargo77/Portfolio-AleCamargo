@@ -512,30 +512,12 @@
   .experience-content p {
     font-size: 16px;
   }
-  // .experience {
-  //   height: 200vh;
-  // }
 }
-
-// @media (max-width: 665px) {
-//   #projects {
-//     height: 180vh;
-//   }
-//   #projects {
-//     height: 220vh;
-//   }
-// }
 
 @media (max-width: 545px) {
   .text-about p {
     max-width: 420px;
   }
-  // #experience {
-  //   height: 180vh;
-  // }
-  // .footer-content img {
-  //   width: 40px;
-  // }
   .footer-content p {
     font-size: 0.8rem;
   }
@@ -545,36 +527,19 @@
   .experience-content p {
     font-size: 0.8rem;
   }
-  // #experience {
-  //   height: 220vh;
-  // }
 }
 
 @media (max-width: 440px) {
   .text-about p {
     max-width: 350px;
   }
-  // .image-about img {
-  //   height: 300px;
-  // }
-  // .about {
-  //   height: 120vh;
-  // }
   #experience h1,
   .skills-pd h1,
   .text-about h1 {
     font-size: 2rem;
   }
-  // #experience {
-  //   height: auto;
-  // }
 }
 
-// @media (max-width: 484px) {
-//   #skills {
-//     height: auto;
-//   }
-// }
 @media (max-width: 340px) {
   .footer-content p {
     font-size: 0.6rem;
