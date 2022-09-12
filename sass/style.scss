@@ -200,7 +200,7 @@
   background-color: $bgd-color-secondary;
   height: auto;
   padding: 5rem 0;
-  scroll-margin-top: 8em;
+  scroll-margin-bottom: 8em;
 }
 
 .skills-pd h1 {
@@ -254,7 +254,7 @@
 .experience {
   background-color: $bgd-color-primary;
   height: auto;
-  scroll-margin-top: 7em;
+  scroll-margin-bottom: 8em;
 }
 
 #experience h1 {
@@ -307,7 +307,7 @@
   background-color: $bgd-color-secondary;
   height: auto;
   padding: 5rem 0;
-  scroll-margin-top: 7em;
+  scroll-margin-bottom: 8em;
 }
 
 .projects-container h1 {
@@ -388,6 +388,34 @@
   color: $color-white;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
+}
+
+.footer-tooltip a {
+  color: $color-green;
+  text-decoration: none;
+  position: relative;
+}
+
+.footer-tooltip a::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 100%;
+  width: max-content;
+  font-size: 12px;
+  max-width: 250px;
+  margin-top: 8px;
+  padding: 6px;
+  background-color: $bgd-color-secondary;
+  border-radius: 4px;
+  color: $color-white;
+  opacity: 0;
+  display: none;
+}
+
+#tooltip:hover:before {
+  top: 100%;
+  opacity: 1;
+  display: inline;
 }
 
 .footer-contacts {
