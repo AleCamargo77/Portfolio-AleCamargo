@@ -19,14 +19,8 @@
   font-weight: 800;
 }
 
-// .navbar {
-//   height: 30vh;
-// }
-
 #nav1 {
-  // height: 20vh;
   display: flex;
-  // align-items: center;
   justify-content: center;
 }
 
@@ -43,9 +37,6 @@
 }
 
 .navbar-ul {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
   list-style: none;
   color: white;
 }
@@ -59,13 +50,13 @@
 }
 
 .home {
-  height: 100vh;
+  height: auto;
   background-color: $bgd-color-secondary;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding-top: 5rem;
+  padding: 5rem 0;
 }
 
 .home-text {
@@ -123,7 +114,8 @@
 
 .about {
   background-color: $bgd-color-primary;
-  height: 100vh;
+  height: auto;
+  padding: 5rem 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -206,7 +198,8 @@
 
 .skills-container {
   background-color: $bgd-color-secondary;
-  height: 100vh;
+  height: auto;
+  padding: 5rem 0;
   scroll-margin-top: 8em;
 }
 
@@ -260,7 +253,7 @@
 
 .experience {
   background-color: $bgd-color-primary;
-  height: 160vh;
+  height: auto;
   scroll-margin-top: 7em;
 }
 
@@ -312,7 +305,8 @@
 
 #projects {
   background-color: $bgd-color-secondary;
-  height: 100vh;
+  height: auto;
+  padding: 5rem 0;
   scroll-margin-top: 7em;
 }
 
@@ -335,13 +329,6 @@
   flex-wrap: wrap;
   gap: 5rem;
 }
-
-// .card {
-//   transition: ease 0.3s;
-//   &:hover {
-//     transform: scale(1.1);
-//   }
-// }
 
 .card-body {
   background-color: $bgd-color-primary;
@@ -418,7 +405,8 @@
 }
 
 .footer-content {
-  height: 15vh;
+  height: auto;
+  padding: 1rem 0;
   background-color: $bgd-color-primary;
   display: flex;
   align-items: center;
@@ -442,8 +430,9 @@
     display: none;
   }
   .about {
-    height: 120vh;
-    gap: 0rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    height: auto;
   }
   .text-about {
     text-align: center;
@@ -453,10 +442,12 @@
   }
   #skills {
     background-color: $bgd-color-secondary;
-    height: 90vh;
+    height: auto;
   }
   #projects {
-    height: 140vh;
+    height: auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }
 
@@ -493,27 +484,27 @@
   .experience-content p {
     font-size: 16px;
   }
-  .experience {
-    height: 200vh;
-  }
+  // .experience {
+  //   height: 200vh;
+  // }
 }
 
-@media (max-width: 665px) {
-  #projects {
-    height: 180vh;
-  }
-  #projects {
-    height: 220vh;
-  }
-}
+// @media (max-width: 665px) {
+//   #projects {
+//     height: 180vh;
+//   }
+//   #projects {
+//     height: 220vh;
+//   }
+// }
 
 @media (max-width: 545px) {
   .text-about p {
     max-width: 420px;
   }
-  #experience {
-    height: 180vh;
-  }
+  // #experience {
+  //   height: 180vh;
+  // }
   // .footer-content img {
   //   width: 40px;
   // }
@@ -523,33 +514,41 @@
   .footer-content {
     flex-direction: column;
   }
-  #experience {
-    height: 220vh;
+  .experience-content p {
+    font-size: 0.8rem;
   }
+  // #experience {
+  //   height: 220vh;
+  // }
 }
 
 @media (max-width: 440px) {
   .text-about p {
     max-width: 350px;
   }
-  .image-about img {
-    height: 300px;
-  }
-  .about {
-    height: 120vh;
-  }
+  // .image-about img {
+  //   height: 300px;
+  // }
+  // .about {
+  //   height: 120vh;
+  // }
   #experience h1,
   .skills-pd h1,
   .text-about h1 {
     font-size: 2rem;
   }
-  #experience {
-    height: auto;
-  }
+  // #experience {
+  //   height: auto;
+  // }
 }
 
-@media (max-width: 484px) {
-  #skills {
-    height: auto;
+// @media (max-width: 484px) {
+//   #skills {
+//     height: auto;
+//   }
+// }
+@media (max-width: 340px) {
+  .footer-content p {
+    font-size: 0.6rem;
   }
 }
