@@ -393,6 +393,7 @@
   width: 285px;
   height: 150px;
   margin: 0 auto;
+  transition: 0.7s;
 }
 .card img:hover {
   transform: scale(1.1);
@@ -526,7 +527,7 @@
   }
   #skills {
     background-color: #121212;
-    height: auto;
+    height: 800px;
   }
   #projects {
     height: auto;
@@ -579,6 +580,10 @@
   }
   .experience-content p {
     font-size: 0.8rem;
+  }
+  #skills {
+    background-color: #121212;
+    height: 1000px;
   }
 }
 @media (max-width: 440px) {
