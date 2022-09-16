@@ -292,10 +292,12 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: ease 0.3s;
+  transition: 0.7s;
+  opacity: 0.5;
 }
 .skill-box:hover {
   transform: scale(1.1);
+  opacity: 1;
 }
 
 .container-description {
@@ -375,6 +377,29 @@
   padding-bottom: 3rem;
 }
 
+.card {
+  position: relative;
+}
+
+.card small {
+  position: absolute;
+  top: -10%;
+  width: max-content;
+  font-size: 12px;
+  max-width: 250px;
+  font-family: Roboto, sans-serif;
+  padding: 6px;
+  background-color: #272727;
+  border-radius: 4px;
+  color: #fff;
+}
+
+#tooltip-gomes:hover:before {
+  top: 30%;
+  opacity: 1;
+  display: inline;
+}
+
 .cards-projects {
   display: flex;
   justify-content: center;
@@ -406,7 +431,7 @@
 #card-btn {
   background-color: transparent;
   height: 3rem;
-  width: 8.2rem;
+  width: 8.7rem;
   border: 3px solid rgb(3, 152, 158);
   border-radius: 10px;
   cursor: pointer;
@@ -414,7 +439,10 @@
   color: #fff;
   font-size: 1rem;
   margin-top: 1.5rem;
-  padding: 0px 5px;
+  padding: 0px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #card-btn:hover {
   background-color: #121212;

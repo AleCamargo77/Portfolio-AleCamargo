@@ -236,9 +236,11 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: ease 0.3s;
+  transition: 0.7s;
+  opacity: 0.5;
   &:hover {
     transform: scale(1.1);
+    opacity: 1;
   }
 }
 
@@ -319,6 +321,29 @@
   padding-bottom: 3rem;
 }
 
+.card {
+  position: relative;
+}
+
+.card small {
+  position: absolute;
+  top: -10%;
+  width: max-content;
+  font-size: 12px;
+  max-width: 250px;
+  font-family: Roboto, sans-serif;
+  padding: 6px;
+  background-color: $bgd-color-primary;
+  border-radius: 4px;
+  color: $color-white;
+}
+
+#tooltip-gomes:hover:before {
+  top: 30%;
+  opacity: 1;
+  display: inline;
+}
+
 .cards-projects {
   display: flex;
   justify-content: center;
@@ -350,7 +375,7 @@
 #card-btn {
   background-color: transparent;
   height: 3rem;
-  width: 8.2rem;
+  width: 8.7rem;
   border: 3px solid $color-green;
   border-radius: 10px;
   cursor: pointer;
@@ -358,7 +383,10 @@
   color: $color-white;
   font-size: 1rem;
   margin-top: 1.5rem;
-  padding: 0px 5px;
+  padding: 0px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   &:hover {
     background-color: $bgd-color-secondary;
   }
@@ -445,6 +473,7 @@
   color: $color-green;
   font-weight: 900;
 }
+
 @media (max-width: 1150px) {
   #home {
     height: 60vh;
