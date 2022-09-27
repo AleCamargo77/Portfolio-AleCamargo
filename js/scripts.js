@@ -1,3 +1,11 @@
+const root = document.querySelector(":root");
+const moon = document.getElementById("moon");
+const light = document.getElementById("light");
+const main = document.querySelector("main");
+
+moon.style.display = "none";
+light.style.display = "block";
+
 const skills = document.querySelectorAll(".skill-box");
 const description = document.querySelector(".text-description");
 const aboutSkill = [
@@ -41,3 +49,39 @@ function showHideButton() {
 }
 
 window.addEventListener("scroll", showHideButton);
+
+document.getElementById("themes").addEventListener("click", function () {
+  if (main.dataset.info === "black") {
+    root.style.setProperty("--bgd-color-primary", "#BDBDBD");
+    root.style.setProperty("--bgd-color-secondary", "#A9A9A9");
+    root.style.setProperty("--color-white", "#000");
+    moon.style.display = "block";
+    light.style.display = "none";
+    main.dataset.info = "light";
+  } else {
+    root.style.setProperty("--bgd-color-primary", "#272727");
+    root.style.setProperty("--bgd-color-secondary", "#121212");
+    root.style.setProperty("--color-white", "#fff");
+    moon.style.display = "none";
+    light.style.display = "block";
+    main.dataset.info = "black";
+  }
+});
+
+document.getElementById("theme").addEventListener("click", function () {
+  if (main.dataset.theme === "dark") {
+    root.style.setProperty("--bg-color", "#fff");
+    root.style.setProperty("--font-color", "#000");
+    root.style.setProperty("--primary-color", "#855b0e");
+    moon.style.display = "block";
+    light.style.display = "none";
+    main.dataset.theme = "light";
+  } else {
+    root.style.setProperty("--bg-color", "#333");
+    root.style.setProperty("--font-color", "#fff");
+    root.style.setProperty("--primary-color", "#fbab18");
+    moon.style.display = "none";
+    light.style.display = "block";
+    main.dataset.theme = "dark";
+  }
+});
