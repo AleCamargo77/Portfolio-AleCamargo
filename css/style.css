@@ -578,8 +578,8 @@
   .navbar-expand-lg .navbar-nav .nav-item .nav-link {
     padding: 1rem 0rem;
   }
-  .upbutton img {
-    display: none;
+  .upbutton i {
+    visibility: hidden;
   }
 }
 @media (max-width: 750px) {
